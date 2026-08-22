@@ -28,5 +28,3 @@ npm run dev
 ```
 - Server: http://localhost:3000
 - Client: http://localhost:5173
-
-## Project structure

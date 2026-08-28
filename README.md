@@ -1,9 +1,9 @@
 # Notebook — Full-Stack Notes App
 
-A per-user notes application with authentication, category management, and full CRUD — built end-to-end in TypeScript and React.
+A per-user notes application with authentication, category management, and full CRUD — built end-to-end in React, Typescript and PostgreSQL.
 
 ## Stack
-- **Backend:** Node.js, Express, better-sqlite3, express-session (bcrypt-hashed passwords, session-based auth)
+- **Backend:** Node.js, Express, PostgreSQL, express-session (bcrypt-hashed passwords, session-based auth)
 - **Frontend:** React, TypeScript
 
 ## Features
@@ -19,8 +19,10 @@ npm install
 npm run install:all
 ```
 
-Create a `.env` file inside `server/`:
-
+Copy `.env.example` to `.env` inside `server/` and fill in your own values:
+```bash
+cp server/.env.example server/.env
+```
 
 Then start the full application:
 ```bash

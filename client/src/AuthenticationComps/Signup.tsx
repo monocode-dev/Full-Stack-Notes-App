@@ -1,4 +1,4 @@
-import apiRequest from "../../utils";
+import apiRequest from "../utils";
 import { useState } from "react"
 
 interface signupProps {

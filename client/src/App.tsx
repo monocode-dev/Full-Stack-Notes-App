@@ -2,7 +2,7 @@ import Sidebar from './Sidebar'
 import NotesMain from './NotesMain'
 import Login from './AuthenticationComps/Login'
 import Signup from './AuthenticationComps/Signup'
-import apiRequest from '../utils'
+import apiRequest from './utils'
 import './style.css'
 import { useState, useEffect } from 'react'
 

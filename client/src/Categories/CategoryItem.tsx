@@ -1,11 +1,11 @@
 import getCategoryColor from '../Categorycolor'
 
 interface CategoryItemProps {
-  id: number | string | undefined | null;
+  id: number;
   title: string;
   isActive: boolean;
   onSelectCategory: () => void; 
-  onDeleteCategory: (id: number | string | undefined | null) => void;
+  onDeleteCategory: (id: number) => void;
 }
 
 export default function CategoryItem({id, 

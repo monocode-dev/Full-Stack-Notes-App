@@ -2,12 +2,12 @@ import getCategoryColor from '../Categorycolor'
 import type { Note } from '../types'
 
 interface NoteCardProps {
-  id: number | string | undefined | null;
+  id: number;
   title: string;
   category: number;
   categoryTitle: string;
   content: string | null;
-  onDeleteNote: (id: number | string | undefined | null) => void;
+  onDeleteNote: (id: number) => void;
   onOpenEditNoteModal: (note: Note) => void;
 }
 

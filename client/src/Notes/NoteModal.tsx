@@ -12,7 +12,7 @@ interface NoteModalProps {
     content: string; 
   }) => void;
   onEditNote: (note: {
-    id: number | string | undefined | null;
+    id: number;
     title: string;
     content: string;
   }) => void;

@@ -18,11 +18,11 @@ interface NotesMainProps {
     content: string; 
   }) => void;
   onEditNote: (note: {
-    id: number | string | undefined | null;
+    id: number;
     title: string;
     content: string;
   }) => void;
-  onDeleteNote: (id: number | string | undefined | null) => void;
+  onDeleteNote: (id: number) => void;
 }
 
 export default function NotesMain({data, 

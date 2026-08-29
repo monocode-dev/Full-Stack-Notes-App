@@ -6,7 +6,7 @@ interface NotesGridProps {
   data: Note[];
   filteredCategory: number | "all";
   categories: Category[];
-  onDeleteNote: (id: number | string | undefined | null) => void;
+  onDeleteNote: (id: number) => void;
   onOpenEditNoteModal: (note: Note) => void;
 }
 

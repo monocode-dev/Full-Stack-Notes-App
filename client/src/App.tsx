@@ -48,7 +48,7 @@ export default function App() {
   }
 
   //Delete Category 
-  function handleDeleteCategory(category_id: number){
+  function handleDeleteCategory(category_id: number | null){
     apiRequest(`/api/categories/${category_id}`, {method: 'DELETE'})
     setCategories(prevCategories => {
       return prevCategories.filter(category => category.id !== category_id)
@@ -88,7 +88,7 @@ export default function App() {
   }
 
   //Put Notes 
-  function handleEditNote(note: { id: number | string | undefined | null; title: string; content: string }){
+  function handleEditNote(note: { id: number ; title: string; content: string }){
     const {id, title, content} = note;
 
     apiRequest(`/api/notes/${id}`, {method: 'PUT', body: JSON.stringify({title, content})})
@@ -100,7 +100,7 @@ export default function App() {
   }
 
   //Delete Notes
-  function handleDeleteNote(note_id: number | string | undefined | null){
+  function handleDeleteNote(note_id: number){
     apiRequest(`/api/notes/${note_id}`, {method: 'DELETE'})
     setNotes(prevNotes => {
       return prevNotes.filter(note => note.id !== note_id)

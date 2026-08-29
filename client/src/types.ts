@@ -1,11 +1,11 @@
 export interface Category {
-  id: number
+  id: number;
   title: string;
   user_id: number | string;
 }
 
 export interface Note {
-  id: number
+  id: number;
   title: string;
   content: string | null;
   user_id?: number | string;

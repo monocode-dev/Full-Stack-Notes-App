@@ -4,7 +4,7 @@ import type { Category } from '../types'
 interface CategoryListProps {
   data: Category[];
   selectedCategory: number | "all";
-  onSelectCategory: (id: number | "all") => void;
+  onSelectCategory: (id: number| "all") => void;
   onDeleteCategory: (category_id: number) => void;
 }
 

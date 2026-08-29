@@ -11,10 +11,23 @@ dotenv.config()
 import pgSession from "connect-pg-simple";
 
 const app = express();
-app.use(cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-}))
+app.use(
+  session({
+    store: new (pgSession(session))({
+      pool: pool,
+      createTableIfMissing: true,
+    }),
+    secret: process.env.SESSION_SECRET as string,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      maxAge: 60 * 60 * 1000,
+      secure: true,
+      sameSite: "none",
+    },
+  })
+);
+
 const PORT = process.env.PORT || 3000;
 
 

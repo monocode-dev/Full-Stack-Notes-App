@@ -1,5 +1,3 @@
-const API_URL = import.meta.env.VITE_API_URL || "";
-
 export interface ApiResponse<T = undefined> {
   success: boolean;
   message?: string;
@@ -7,7 +5,7 @@ export interface ApiResponse<T = undefined> {
 }
 
 function apiRequest<T = undefined>(url: string, options: RequestInit = {}): Promise<ApiResponse<T> | null> {
-  return fetch(`${API_URL}${url}`, {
+  return fetch(url, {
     credentials: "include",
     headers: { "Content-type": "application/json", ...options.headers },
     ...options,

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://full-stack-notes-app-n2hs.onrender.com/api/:path*" },
+    { "source": "/login", "destination": "https://full-stack-notes-app-n2hs.onrender.com/login" },
+    { "source": "/logout", "destination": "https://full-stack-notes-app-n2hs.onrender.com/logout" },
+    { "source": "/signup", "destination": "https://full-stack-notes-app-n2hs.onrender.com/signup" }
+  ]
+}

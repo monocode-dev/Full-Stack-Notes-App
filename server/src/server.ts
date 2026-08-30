@@ -11,6 +11,8 @@ dotenv.config()
 import pgSession from "connect-pg-simple";
 
 const app = express();
+
+app.set('trust proxy', 1);
 app.use(
   cors({
     origin: process.env.CLIENT_URL,
@@ -18,7 +20,7 @@ app.use(
   }),
   session({
     store: new (pgSession(session))({
-      pool: pool,
+      pool,
       createTableIfMissing: true,
     }),
     secret: process.env.SESSION_SECRET as string,

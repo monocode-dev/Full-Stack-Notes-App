@@ -5,8 +5,8 @@ A per-user notes application with authentication, categorized organization, and 
 **🔗 Live app:** https://full-stack-notes-app-roan.vercel.app/
 
 
-![Notes view](./screenshots/notes-app-view.png)
-![Login screen](./screenshots/login-page-view.png)
+![Notes view](./Screenshots/notes-app-view.png)
+![Login screen](./Screenshots/login-page-view.png)
 
 
 ## Overview

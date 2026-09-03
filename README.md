@@ -2,7 +2,7 @@
 
 A per-user notes application with authentication, categorized organization, and full CRUD — built end-to-end in TypeScript, from a vanilla JavaScript/SQLite prototype through a full TypeScript rewrite and a PostgreSQL migration.
 
-**🔗 Live app:** https://full-stack-notes-app-roan.vercel.app/
+**🔗 Live app:** https://monocode-notebook.vercel.app/
 
 
 ![Notes view](./Screenshots/notes-app-view.png)

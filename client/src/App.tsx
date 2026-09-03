@@ -31,7 +31,7 @@ export default function App() {
       setIsLoggedIn(true);
       setCategories(response.data);
     })
-  }, [])
+  }, [isLoggedIn])
 
   //Post Categories 
   function handleAddCategory(title: string){
